@@ -29,7 +29,7 @@ class OpenGraphNode(template.Node):
         for key, value in self.properties.items():
             value = template.Variable(value).resolve(context)
             value = value.replace('"', ' ')
-            key = value.replace('"', '')
+            key = key.replace('"', '')
             og_formatted = og_layout.format(key, value)
             result_list.append(og_formatted)
         return u'\n'.join(result_list)
