@@ -15,9 +15,6 @@ Solution
 
 This package help you!
 ﻿
-          /◝o
-       (¤_¤)
-       .[__].
 █▄▄ ███ █▄▄ █▄█▄█ █▄█ ▀█▀
 
 
