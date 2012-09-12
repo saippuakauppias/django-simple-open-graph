@@ -43,7 +43,7 @@ Aaand! You can use this package in different templates:
 
     {% block extra_head %}
         {% thumbnail object.user.image 150x150 as uimage %} <!-- as example for use easy_thumbnails package -->
-        {% get_opengraph_meta "url=object.get_absolute_url, title=object.title, type='website', image=uimage.url" %}
+        {% opengraph_meta "url=object.get_absolute_url, title=object.title, type='website', image=uimage.url" %}
     {% endblock %}
 
 This tag converted in meta html properties:
