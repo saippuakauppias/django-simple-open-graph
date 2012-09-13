@@ -7,7 +7,7 @@ Django package for simplicity embed open graph (og:) layout in templates for dif
 Problem
 -------
 
-If you use many different objects and you need embed open-graph (e.g. og:fb for facebook) layout for all pages in site.
+If you use many different objects and you need embed open-graph (e.g. fb: for facebook) layout for all pages in site.
 
 
 Solution
