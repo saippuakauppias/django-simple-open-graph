@@ -7,7 +7,7 @@ Django package for simplicity embed open graph (og:) layout in templates for dif
 Problem
 -------
 
-If you use many different objects and you need embed open-graph (e.g. facebook) layout for all pages in site.
+If you use many different objects and you need embed open-graph (e.g. og:fb for facebook) layout for all pages in site.
 
 
 Solution
@@ -15,10 +15,19 @@ Solution
 
 This package help you!
 ﻿
+
 █▄▄ ███ █▄▄ █▄█▄█ █▄█ ▀█▀
 
 
-Example of usage
+Installation
+------------
+
+You can install from PyPI:
+
+    $ pip install django-simple-open-graph=0.1
+
+
+Example Of Usage
 ----------------
 
 Add og namespace in your base template:
@@ -53,4 +62,11 @@ This tag converted in meta html properties:
     <meta property="og:type" content="website">
     <meta property="og:title" content="Profile: user #1">
 
-Excelent!
+Excellent!
+
+
+Useful Links
+------------
+
+* [The Open Graph protocol](http://ogp.me/)
+* [Facebook Debugger](http://developers.facebook.com/tools/debug)
