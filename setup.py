@@ -12,7 +12,7 @@ setup(
     license='ISC',
     description='Django package for simplicity embed open graph (og:) '
                 'layout in templates for different objects',
-    long_description=read('README.md'),
+    long_description=read('README.rst'),
     url='https://github.com/saippuakauppias/django-simple-open-graph',
     author='Denis Veselov',
     author_email='progr.mail@gmail.com',
