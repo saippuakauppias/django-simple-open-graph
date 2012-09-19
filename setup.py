@@ -8,11 +8,11 @@ def read(filename):
 
 setup(
     name='django-simple-open-graph',
-    version='0.1',
+    version='0.2',
     license='ISC',
     description='Django package for simplicity embed open graph (og:) '
                 'layout in templates for different objects',
-    long_description=read('README.rst'),
+    long_description=read('README.rst') + read('CHANGES.rst'),
     url='https://github.com/saippuakauppias/django-simple-open-graph',
     author='Denis Veselov',
     author_email='progr.mail@gmail.com',
