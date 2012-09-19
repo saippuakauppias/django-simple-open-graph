@@ -27,7 +27,10 @@ class OpenGraphNode(template.Node):
         og_layout = u'<meta property="og:{0}" content="{1}" />'
         result_list = []
         for key, value in self.properties.items():
-            value = template.Variable(value).resolve(context)
+            try:
+                value = template.Variable(value).resolve(context)
+            except template.base.VariableDoesNotExist:
+                continue
             value = value.replace('"', ' ')
             key = key.replace('"', '')
             og_formatted = og_layout.format(key, value)
