@@ -1,4 +1,5 @@
 from django import template
+from django.contrib.sites.models import Site
 
 from ..utils import string_to_dict
 
@@ -25,6 +26,7 @@ class OpenGraphNode(template.Node):
 
     def render(self, context):
         og_layout = u'<meta property="og:{0}" content="{1}" />'
+        site_domain = Site.objects.get_current().domain
         result_list = []
         for key, value in self.properties.items():
             try:
@@ -33,6 +35,10 @@ class OpenGraphNode(template.Node):
                 continue
             value = value.replace('"', ' ')
             key = key.replace('"', '')
+            # fix absolute links
+            if key in [u'url', u'image', u'audio', u'video'] and\
+               value and value[0] == u'/':
+                value = u'http://{0}{1}'.format(site_domain, value)
             og_formatted = og_layout.format(key, value)
             result_list.append(og_formatted)
         return u'\n'.join(result_list)
