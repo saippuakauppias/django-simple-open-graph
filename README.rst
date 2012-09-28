@@ -24,7 +24,7 @@ Installation
 
 You can install from PyPI::
 
-    $ pip install django-simple-open-graph==0.1
+    $ pip install django-simple-open-graph
 
 And add ``simple_open_graph`` in your ``INSTALLED_APPS``.
 
