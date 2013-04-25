@@ -19,7 +19,6 @@ def opengraph_meta(parser, token):
 class OpenGraphNode(template.Node):
 
     def __init__(self, properties):
-        print properties
         self.properties = properties
 
     def render(self, context):        
@@ -36,8 +35,7 @@ class OpenGraphNode(template.Node):
                 result_list.append(self.render_tag(item[0], item[1], context))
         return u'\n'.join(result_list)
 
-    def render_tag(self, key, value, context):
-        print key, value
+    def render_tag(self, key, value, context):     
         try:
             value = template.Variable(value).resolve(context)
         except template.base.VariableDoesNotExist:
