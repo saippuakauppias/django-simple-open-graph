@@ -72,3 +72,9 @@ Useful Links
 
 * `The Open Graph protocol <http://ogp.me/>`_
 * `Facebook Debugger <http://developers.facebook.com/tools/debug>`_
+
+
+.. image:: https://d2weczhvl823v0.cloudfront.net/saippuakauppias/django-simple-open-graph/trend.png
+   :alt: Bitdeli badge
+   :target: https://bitdeli.com/free
+
